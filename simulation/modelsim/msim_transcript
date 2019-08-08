@@ -1,0 +1,85 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do fileIO_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:18:36 on Aug 08,2019
+# vcom -reportprogress 300 -93 -work work E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity fileoutput
+# -- Compiling architecture behave of fileoutput
+# End time: 13:18:37 on Aug 08,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.fileoutput
+# vsim -gui "+altera" -l msim_transcript -do "fileIO_run_msim_rtl_vhdl.do" 
+# Start time: 13:18:44 on Aug 08,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fileoutput(behave)
+add wave -position end  sim:/fileoutput/clk
+add wave -position end  sim:/fileoutput/enable
+add wave -position end  sim:/fileoutput/input
+force input "1010101010";force enable '0';force clk '1';run 100;force clk '0';run 100;
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+force input "1010101010";force enable '0';force clk '1';run 100;force clk '0';run 100;
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 800 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 1 ns  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 1200 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 1400 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 1600 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 1800 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 2 ns  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 2200 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 2400 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 2600 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 2800 ps  Iteration: 0  Instance: /fileoutput
+force input "1010101010";force enable '0';force clk '1';run 100;force clk '0';run 100;
+force input "1111111111";force enable '1';force clk '1';run 100;force clk '0';run 100;
+force input "1111111111";force enable '1';force clk '1';run 100;force clk '0';run 100;
+# ** Error: (vsim-3341) Cannot open file "output.txt"; it is already open.
+#    Time: 3400 ps  Iteration: 0  Instance: /fileoutput
+force input "1111111111";force enable '0';force clk '1';run 100;force clk '0';run 100;
+# End time: 13:40:34 on Aug 08,2019, Elapsed time: 0:21:50
+# Errors: 12, Warnings: 0

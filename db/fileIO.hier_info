@@ -1,0 +1,15 @@
+|fileoutput
+clk => ~NO_FANOUT~
+enable => ~NO_FANOUT~
+input[0] => ~NO_FANOUT~
+input[1] => ~NO_FANOUT~
+input[2] => ~NO_FANOUT~
+input[3] => ~NO_FANOUT~
+input[4] => ~NO_FANOUT~
+input[5] => ~NO_FANOUT~
+input[6] => ~NO_FANOUT~
+input[7] => ~NO_FANOUT~
+input[8] => ~NO_FANOUT~
+input[9] => ~NO_FANOUT~
+
+
