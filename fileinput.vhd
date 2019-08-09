@@ -7,48 +7,48 @@ use ieee.std_logic_textio.all;
 entity fileinput is
 port(
 clk : in std_logic;
-ready:out std_logic := '0';
+ready: inout std_logic := '0';
 output:out std_logic_vector(9 downto 0):=(others => '0')
 );
 end fileinput;
 
 architecture behave of fileinput is
-
   file file_VECTORS : text;
-  signal ready2 : std_logic:= '0';
-  signal finished: std_logic:= '0';
+  signal opened: std_logic:= '0';
+  signal closed: std_logic:= '0';
 begin
 
  
-  process(clk)
+  process(clk,ready)
   
     variable v_ILINE     : line;
-    variable v_DATA : std_logic_vector(9 downto 0);
-    variable v_SPACE     : character;    
+    variable v_DATA : std_logic_vector(9 downto 0);    
   begin 
-	if(clk'event and clk = '1') then
+	if(rising_edge(clk)) then
 
-		if(ready2 = '0' and finished = '0') then
+		if(ready = '0' and opened <= '0') then
 			 file_open(file_VECTORS, "input.txt",  read_mode);
-				ready2 <= '1';
-				finished <= '1'; --for circulate the process remove this line
+				ready <= '1';
+				opened <= '1'; --for circulate the process remove this line
 		 end if;
 
-		if(ready2 = '1') then
+		if(ready <= '1' and endfile(file_VECTORS)) then	
+			ready <= '0';
+			closed <= '1';
+		else
 			readline(file_VECTORS, v_ILINE);
 			read(v_ILINE, v_DATA);
 		end if;
+
 		
-		if(clk'event and clk = '1' and endfile(file_VECTORS)) then
+		if(ready = '0' and closed = '0'  and endfile(file_VECTORS))then
 				file_close(file_VECTORS);
-				ready2 <= '0';
 		end if;
 		
 		output <= v_DATA;
-		ready <= ready2;
-		
 		
 	end if;
+	
 end process;
 	
 

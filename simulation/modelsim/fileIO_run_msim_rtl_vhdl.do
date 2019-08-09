@@ -5,5 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd}
 vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd}
+vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd}
 

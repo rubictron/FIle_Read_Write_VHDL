@@ -8,26 +8,26 @@ z2
 !i10f 100
 cModel Technology
 Z0 dE:/[FYP]/Blocks/Vhdl_File_IO/simulation/modelsim
-Efileoutput
-Z1 w1565250488
+Efileinput
+Z1 w1565367246
 Z2 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z6 8E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd
-Z7 FE:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd
+Z6 8E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd
+Z7 FE:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd
 l0
 L7
-VAhQ_PL7f4GZU5M@YC;CWV1
-!s100 4Un1M5=6kcoz`mm3BK1V=3
+VU9e5LSFM9UVZLQ<A9OEoE0
+!s100 S2V4:0fHFAi6]50Oj<gA:3
 Z8 OV;C;10.3d;59
 31
-Z9 !s110 1565250516
+Z9 !s110 1565367284
 !i10b 1
-Z10 !s108 1565250516.826000
-Z11 !s90 -reportprogress|300|-93|-work|work|E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd|
-Z12 !s107 E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd|
+Z10 !s108 1565367284.472000
+Z11 !s90 -reportprogress|300|-93|-work|work|E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd|
+Z12 !s107 E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd|
 !i113 1
 Z13 o-93 -work work
 Z14 tExplicit 1
@@ -36,11 +36,11 @@ R2
 R3
 R4
 R5
-DEx4 work 10 fileoutput 0 22 AhQ_PL7f4GZU5M@YC;CWV1
-l20
-L16
-VThDYN;>BbmR^]?5M1>XFS3
-!s100 4`F[RnTNB]X=hdCTN1aS03
+DEx4 work 9 fileinput 0 22 U9e5LSFM9UVZLQ<A9OEoE0
+l19
+L15
+V;<;k87;PmNL@AfIb26Mh<3
+!s100 SRkh;3@7?5`[58l@nmE@W3
 R8
 31
 R9
@@ -48,6 +48,88 @@ R9
 R10
 R11
 R12
+!i113 1
+R13
+R14
+Efileoutput
+Z15 w1565366656
+R2
+R3
+R4
+R5
+R0
+Z16 8E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd
+Z17 FE:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd
+l0
+L7
+VAhQ_PL7f4GZU5M@YC;CWV1
+!s100 4Un1M5=6kcoz`mm3BK1V=3
+R8
+31
+Z18 !s110 1565367285
+!i10b 1
+Z19 !s108 1565367284.993000
+Z20 !s90 -reportprogress|300|-93|-work|work|E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd|
+Z21 !s107 E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd|
+!i113 1
+R13
+R14
+Abehave
+R2
+R3
+R4
+R5
+DEx4 work 10 fileoutput 0 22 AhQ_PL7f4GZU5M@YC;CWV1
+l21
+L16
+VZ1K9f`0z7][X?9MmjGd802
+!s100 8lcFl79hnm[m`o2;FdZLz0
+R8
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Etop_level
+Z22 w1565347046
+R4
+R5
+R0
+Z23 8E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd
+Z24 FE:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd
+l0
+L5
+VGNZbHoAAfWG:aXEQ9lfgZ1
+!s100 gD^9NMfC8A9<>njC>oQa10
+R8
+31
+R18
+!i10b 1
+Z25 !s108 1565367285.498000
+Z26 !s90 -reportprogress|300|-93|-work|work|E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd|
+Z27 !s107 E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd|
+!i113 1
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 9 top_level 0 22 GNZbHoAAfWG:aXEQ9lfgZ1
+l34
+L11
+V1Zln6Yo7DR^MJ5Edn8]J`0
+!s100 0T3<X[L0jIgGOKFF8;<iD3
+R8
+31
+R18
+!i10b 1
+R25
+R26
+R27
 !i113 1
 R13
 R14

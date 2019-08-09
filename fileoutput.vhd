@@ -16,20 +16,21 @@ end fileoutput;
 architecture behave of fileoutput is
 
   file file_RESULTS : text;
-  
+  signal opened:std_logic:='0';
+  signal closed:std_logic:='0';
 begin
 
- 
-  process(clk)
+  process(clk,enable)
   
     variable v_OLINE     : line;
 	 
     
   begin 
-	if(clk'event and clk = '1') then
+	if(rising_edge(clk)) then
 
-		if(enable = '1') then
+		if(enable = '1' and opened = '0') then
 			 file_open(file_RESULTS, "output.txt", write_mode);
+			 opened <= '1';
 		 end if;
 		 
 		 
@@ -39,7 +40,7 @@ begin
 		end if;
 	
 		
-		if(enable ='0') then
+		if(enable ='0' and closed = '0') then
 			file_close(file_RESULTS);
 		end if;
 		

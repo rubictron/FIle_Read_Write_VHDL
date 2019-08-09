@@ -1,5 +1,5 @@
 Flow report for fileIO
-Thu Aug 08 13:34:58 2019
+Fri Aug 09 21:44:33 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -38,24 +38,29 @@ agreement for further details.
 
 
 
-+--------------------------------------------------------------------------+
-; Flow Summary                                                             ;
-+-----------------------------+--------------------------------------------+
-; Flow Status                 ; Flow Failed - Thu Aug 08 13:34:58 2019     ;
-; Quartus II 64-Bit Version   ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name               ; fileIO                                     ;
-; Top-level Entity Name       ; fileoutput                                 ;
-; Family                      ; Cyclone V                                  ;
-; Device                      ; 5CGXFC5C6F23C7                             ;
-; Timing Models               ; Final                                      ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
-; Total registers             ; N/A until Partition Merge                  ;
-; Total pins                  ; N/A until Partition Merge                  ;
-; Total virtual pins          ; N/A until Partition Merge                  ;
-; Total block memory bits     ; N/A until Partition Merge                  ;
-; Total PLLs                  ; N/A until Partition Merge                  ;
-; Total DLLs                  ; N/A until Partition Merge                  ;
-+-----------------------------+--------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Fri Aug 09 21:44:33 2019      ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                   ; fileIO                                     ;
+; Top-level Entity Name           ; top_level                                  ;
+; Family                          ; Cyclone V                                  ;
+; Device                          ; 5CGXFC5C6F23C7                             ;
+; Timing Models                   ; Final                                      ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 1                                          ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/08/2019 13:34:46 ;
+; Start date & time ; 08/09/2019 21:44:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fileIO              ;
 +-------------------+---------------------+
@@ -74,18 +79,18 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1097319625930.156525148601908         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 1097319625930.156536726011984         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; fileoutput  ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; fileoutput  ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; fileoutput  ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; top_level   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; top_level   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; top_level   ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; fileoutput                            ; fileIO        ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; top_level                             ; fileIO        ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -94,8 +99,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 748 MB              ; 00:00:31                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 758 MB              ; 00:00:32                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fileIO
-Thu Aug 08 13:34:58 2019
+Fri Aug 09 21:44:33 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -10,7 +10,13 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -34,22 +40,27 @@ agreement for further details.
 
 
 
-+--------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                             ;
-+-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Aug 08 13:34:58 2019          ;
-; Quartus II 64-Bit Version   ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name               ; fileIO                                     ;
-; Top-level Entity Name       ; fileoutput                                 ;
-; Family                      ; Cyclone V                                  ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
-; Total registers             ; N/A until Partition Merge                  ;
-; Total pins                  ; N/A until Partition Merge                  ;
-; Total virtual pins          ; N/A until Partition Merge                  ;
-; Total block memory bits     ; N/A until Partition Merge                  ;
-; Total PLLs                  ; N/A until Partition Merge                  ;
-; Total DLLs                  ; N/A until Partition Merge                  ;
-+-----------------------------+--------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Aug 09 21:44:33 2019      ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                   ; fileIO                                     ;
+; Top-level Entity Name           ; top_level                                  ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 1                                          ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -58,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC5C6F23C7     ;                    ;
-; Top-level entity name                                                           ; fileoutput         ; fileIO             ;
+; Top-level entity name                                                           ; top_level          ; fileIO             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -157,29 +168,125 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                       ;
++----------------------------------+-----------------+-----------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------+---------+
+; fileinput.vhd                    ; yes             ; User VHDL File  ; E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd  ;         ;
+; fileoutput.vhd                   ; yes             ; User VHDL File  ; E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd ;         ;
+; top_level.vhd                    ; yes             ; User VHDL File  ; E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd  ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; iclk  ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; |top_level                 ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 1    ; 0            ; |top_level          ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 1                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Thu Aug 08 13:34:46 2019
+    Info: Processing started: Fri Aug 09 21:44:19 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fileIO -c fileIO
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
-Info (12021): Found 2 design units, including 1 entities, in source file fileio.vhd
-    Info (12022): Found design unit 1: fileIO-behave
-    Info (12023): Found entity 1: fileIO
 Info (12021): Found 2 design units, including 1 entities, in source file fileinput.vhd
     Info (12022): Found design unit 1: fileinput-behave
     Info (12023): Found entity 1: fileinput
 Info (12021): Found 2 design units, including 1 entities, in source file fileoutput.vhd
     Info (12022): Found design unit 1: fileoutput-behave
     Info (12023): Found entity 1: fileoutput
-Error (10482): VHDL error at fileinput.vhd(30): object "finished" is used but not declared File: E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd Line: 30
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 748 megabytes
-    Error: Processing ended: Thu Aug 08 13:34:58 2019
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:31
+Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
+    Info (12022): Found design unit 1: top_level-arch
+    Info (12023): Found entity 1: top_level
+Info (12127): Elaborating entity "top_level" for the top level hierarchy
+Info (12128): Elaborating entity "fileoutput" for hierarchy "fileoutput:Inst_fileoutput"
+Warning (10540): VHDL Signal Declaration warning at fileoutput.vhd(20): used explicit default value for signal "closed" because signal was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at syn_textio_vhdl1993.vhd(213): used initial value expression for variable "m" because variable was never assigned a value
+Info (12128): Elaborating entity "fileinput" for hierarchy "fileinput:Inst_fileinput"
+Warning (10873): Using initial value X (don't care) for net "v_DATA" at fileinput.vhd(25)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "iclk"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 758 megabytes
+    Info: Processing ended: Fri Aug 09 21:44:33 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 
