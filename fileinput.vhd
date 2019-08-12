@@ -5,10 +5,13 @@ use STD.textio.all;
 use ieee.std_logic_textio.all;
 
 entity fileinput is
+generic(
+dataWidth : integer := 10
+);
 port(
 clk : in std_logic;
 ready: inout std_logic := '0';
-output:out std_logic_vector(9 downto 0):=(others => '0')
+output:out std_logic_vector(dataWidth-1 downto 0):=(others => '0')
 );
 end fileinput;
 
@@ -22,7 +25,7 @@ begin
   process(clk,ready)
   
     variable v_ILINE     : line;
-    variable v_DATA : std_logic_vector(9 downto 0);    
+    variable v_DATA : std_logic_vector(dataWidth-1 downto 0);    
   begin 
 	if(rising_edge(clk)) then
 

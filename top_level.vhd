@@ -11,25 +11,31 @@ end entity top_level;
 architecture arch of top_level is
 
 component fileinput
+generic (
+dataWidth:integer:=8
+); 
 port(
 clk : in std_logic;
 ready:inout std_logic := '0';
-output:out std_logic_vector(9 downto 0):=(others => '0')
+output:out std_logic_vector(dataWidth-1 downto 0):=(others => '0')
 );
 end component;
 
-component fileoutput 
+component fileoutput
+generic (
+dataWidth:integer:=8
+); 
 port(
 clk : in std_logic;
 enable: in std_logic:='0';
-input: in std_logic_vector(9 downto 0):=(others => '0')
+input: in std_logic_vector(dataWidth-1 downto 0):=(others => '0')
 );
 end component;
 
 signal ready: std_logic;
-signal output: std_logic_vector(9 downto 0):=(others => '0');
+signal output: std_logic_vector(7 downto 0):=(others => '0');
 signal enable:  std_logic;
-signal input:  std_logic_vector(9 downto 0):=(others => '0');
+signal input:  std_logic_vector(7 downto 0):=(others => '0');
 
 begin
 
@@ -41,7 +47,8 @@ begin
 end if;
  end process;
  
-  Inst_fileoutput: fileoutput PORT MAP(
+  Inst_fileoutput: fileoutput
+	PORT MAP(
 		clk => iclk,
 		enable => enable,
 		input => input

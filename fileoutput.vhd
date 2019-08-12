@@ -5,10 +5,13 @@ use STD.textio.all;
 use ieee.std_logic_textio.all;
 
 entity fileoutput is
+generic(
+dataWidth : integer := 10
+);
 port(
 clk : in std_logic;
 enable: in std_logic:='0';
-input: in std_logic_vector(9 downto 0):=(others => '0')
+input: in std_logic_vector(dataWidth-1 downto 0):=(others => '0')
 );
 end fileoutput;
 
@@ -35,7 +38,7 @@ begin
 		 
 		 
 		if(enable = '1') then
-			write(v_OLINE, input, right, 10);
+			write(v_OLINE, input, right, dataWidth);
 			writeline(file_RESULTS, v_OLINE);
 		end if;
 	

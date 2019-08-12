@@ -9,8 +9,6 @@ iclk => input[4].CLK
 iclk => input[5].CLK
 iclk => input[6].CLK
 iclk => input[7].CLK
-iclk => input[8].CLK
-iclk => input[9].CLK
 iclk => fileinput:Inst_fileinput.clk
 
 
@@ -25,8 +23,6 @@ input[4] => ~NO_FANOUT~
 input[5] => ~NO_FANOUT~
 input[6] => ~NO_FANOUT~
 input[7] => ~NO_FANOUT~
-input[8] => ~NO_FANOUT~
-input[9] => ~NO_FANOUT~
 
 
 |top_level|fileinput:Inst_fileinput
@@ -38,8 +34,6 @@ clk => output[4]~reg0.CLK
 clk => output[5]~reg0.CLK
 clk => output[6]~reg0.CLK
 clk => output[7]~reg0.CLK
-clk => output[8]~reg0.CLK
-clk => output[9]~reg0.CLK
 clk => opened.CLK
 clk => ready~reg0.CLK
 ready <> ready~reg0
@@ -51,7 +45,5 @@ output[4] <= output[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 output[5] <= output[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 output[6] <= output[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 output[7] <= output[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-output[8] <= output[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-output[9] <= output[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

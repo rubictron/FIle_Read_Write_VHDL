@@ -14,7 +14,7 @@
 # 
 # vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 21:44:44 on Aug 09,2019
+# Start time: 12:11:03 on Aug 12,2019
 # vcom -reportprogress 300 -93 -work work E:/[FYP]/Blocks/Vhdl_File_IO/fileinput.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,11 +23,11 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity fileinput
 # -- Compiling architecture behave of fileinput
-# End time: 21:44:44 on Aug 09,2019, Elapsed time: 0:00:00
+# End time: 12:11:03 on Aug 12,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 21:44:44 on Aug 09,2019
+# Start time: 12:11:03 on Aug 12,2019
 # vcom -reportprogress 300 -93 -work work E:/[FYP]/Blocks/Vhdl_File_IO/fileoutput.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,23 +36,23 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity fileoutput
 # -- Compiling architecture behave of fileoutput
-# End time: 21:44:45 on Aug 09,2019, Elapsed time: 0:00:01
+# End time: 12:11:04 on Aug 12,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 21:44:45 on Aug 09,2019
+# Start time: 12:11:04 on Aug 12,2019
 # vcom -reportprogress 300 -93 -work work E:/[FYP]/Blocks/Vhdl_File_IO/top_level.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity top_level
 # -- Compiling architecture arch of top_level
-# End time: 21:44:45 on Aug 09,2019, Elapsed time: 0:00:00
+# End time: 12:11:04 on Aug 12,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.top_level
 # vsim -gui "+altera" -l msim_transcript -do "fileIO_run_msim_rtl_vhdl.do" 
-# Start time: 21:45:47 on Aug 09,2019
+# Start time: 12:11:09 on Aug 12,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -78,32 +78,5 @@ force iclk '1';run 100;force iclk '0';run 100;
 force iclk '1';run 100;force iclk '0';run 100;
 force iclk '1';run 100;force iclk '0';run 100;
 force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-force iclk '1';run 100;force iclk '0';run 100;
-
-force iclk '1';run 100;force iclk '0';run 100;
-# End time: 21:56:57 on Aug 09,2019, Elapsed time: 0:11:10
+# End time: 12:12:13 on Aug 12,2019, Elapsed time: 0:01:04
 # Errors: 0, Warnings: 0
