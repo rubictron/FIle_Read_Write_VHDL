@@ -10,3 +10,7 @@ input and output is in the 10 bit binary data as text as shown below
 0000111111</br>
 0000100111</br>
 1000100011</br>
+
+Waveformes
+
+![Waveforms](waveform.JPG)

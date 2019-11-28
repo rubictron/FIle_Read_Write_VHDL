@@ -32,7 +32,7 @@ begin
 		if(ready = '0' and opened <= '0') then
 			 file_open(file_VECTORS, "input.txt",  read_mode);
 				ready <= '1';
-				opened <= '1'; --for circulate the process remove this line
+				opened <= '1';
 		 end if;
 
 		if(ready <= '1' and endfile(file_VECTORS)) then	
